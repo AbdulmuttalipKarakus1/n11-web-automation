@@ -10,31 +10,27 @@ This project automates a scenario on [n11.com](https://www.n11.com/magazalar) us
 * [TestNG](https://testng.org) - Testing framework
 
 ## Version Control 
-* [Github] (https://github.com/AbdulmuttalipKarakus1/n11-web-automation)
+* [Github](https://github.com/AbdulmuttalipKarakus1/n11-web-automation) - The repo of project
 
 
 ## Setup for mac
 
 * Install Java and Maven (MacOS):
 ~~~~
-# brew
 brew install openjdk
 ~~~~
 
 ~~~~
-# brew
 brew install maven
 ~~~~
 
 ~~~~
-# brew
 brew install allure
 ~~~~
 
 * Clone repo and run:
 
 ~~~~
-# console
 mvn clean test
 ~~~~
    
@@ -42,7 +38,6 @@ mvn clean test
 * Generate Allure Report:
 
 ~~~~
-# console
 allure serve allure-results
 ~~~~
    
