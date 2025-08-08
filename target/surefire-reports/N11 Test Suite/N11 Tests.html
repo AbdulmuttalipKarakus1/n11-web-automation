@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 07 23:21:24 GMT+03:00 2025</td>
+<td>Started on:</td><td>Fri Aug 08 12:15:53 GMT+03:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>51 seconds (51572 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40895 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,20 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Go to random store and then validate", "N11 Store and Product Automation"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at stepDefinitions.N11Steps.verifyStorePageOpened(N11Steps.java:32)
-	at ✽.User verifies the store page opens correctly(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:9)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783141366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace783141366'><pre>java.lang.AssertionError: expected [true] but found [false]
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product, add to basket and validate", "N11 Store and Product Automation"</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [2]: 3740 != 2231 expected [3740] but found [2231]
+	at stepDefinitions.N11Steps.verifyFilterAndSortResult(N11Steps.java:86)
+	at ✽.User verifies the result is correct according to filter(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:24)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace753853622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace753853622'><pre>java.lang.AssertionError: Lists differ at element [2]: 3740 != 2231 expected [3740] but found [2231]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at stepDefinitions.N11Steps.verifyStorePageOpened(N11Steps.java:32)
-	at ✽.User verifies the store page opens correctly(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:9)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1644)
+	at org.testng.Assert.assertEquals(Assert.java:1606)
+	at stepDefinitions.N11Steps.verifyFilterAndSortResult(N11Steps.java:86)
+	at ✽.User verifies the result is correct according to filter(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:24)
 </pre></div></td>
-<td>18</td>
+<td>17</td>
 <td>runners.TestRunner@78e4deb0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -103,12 +104,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product, add to basket and validate", "N11 Store and Product Automation"</td>
 <td></td>
-<td>16</td>
+<td>17</td>
 <td>runners.TestRunner@78e4deb0</td></tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product, add to basket and validate", "N11 Store and Product Automation"</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Go to random store and then validate", "N11 Store and Product Automation"</td>
 <td></td>
-<td>16</td>
+<td>5</td>
 <td>runners.TestRunner@78e4deb0</td></tr>
 </table><p>
 </body>

@@ -117,9 +117,8 @@ public class N11Page extends BasePage {
                     clickElement(xpath);
                 }
             }
+            clickAddBasketButtonOnModal();
         }
-
-        clickAddBasketButtonOnModal();
     }
 
     public void clickAddBasketButtonOnModal() {

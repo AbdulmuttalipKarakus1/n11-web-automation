@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-07T23:21:24 GMT+03:00" name="N11 Test Suite" finished-at="2025-08-07T23:22:16 GMT+03:00" duration-ms="51572">
+  <suite started-at="2025-08-08T12:15:53 GMT+03:00" name="N11 Test Suite" finished-at="2025-08-08T12:16:34 GMT+03:00" duration-ms="40895">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@78e4deb0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-07T23:21:24 GMT+03:00" name="N11 Tests" finished-at="2025-08-07T23:22:16 GMT+03:00" duration-ms="51572">
+    <test started-at="2025-08-08T12:15:53 GMT+03:00" name="N11 Tests" finished-at="2025-08-08T12:16:34 GMT+03:00" duration-ms="40895">
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-07T23:21:24 GMT+03:00" name="setUpClass" finished-at="2025-08-07T23:21:24 GMT+03:00" duration-ms="58" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-08T12:15:53 GMT+03:00" name="setUpClass" finished-at="2025-08-08T12:15:53 GMT+03:00" duration-ms="59" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@51fc862e]]>
+                <![CDATA[org.testng.TestRunner@5dcd0cdf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-07T23:21:24 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-07T23:21:42 GMT+03:00" duration-ms="18176" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-08T12:15:53 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T12:15:58 GMT+03:00" duration-ms="5685" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,57 +34,58 @@
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-08T12:15:58 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T12:16:16 GMT+03:00" duration-ms="17798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search product, add to basket and validate"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["N11 Store and Product Automation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-08T12:16:16 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-08T12:16:34 GMT+03:00" duration-ms="17336" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search product, add to basket and validate"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["N11 Store and Product Automation"]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Lists differ at element [2]: 3740 != 2231 expected [3740] but found [2231]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Lists differ at element [2]: 3740 != 2231 expected [3740] but found [2231]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at stepDefinitions.N11Steps.verifyStorePageOpened(N11Steps.java:32)
-at ✽.User verifies the store page opens correctly(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:9)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:1644)
+at org.testng.Assert.assertEquals(Assert.java:1606)
+at stepDefinitions.N11Steps.verifyFilterAndSortResult(N11Steps.java:86)
+at ✽.User verifies the result is correct according to filter(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-07T23:21:42 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-07T23:21:59 GMT+03:00" duration-ms="16409" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search product, add to basket and validate"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["N11 Store and Product Automation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-07T23:21:59 GMT+03:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-07T23:22:16 GMT+03:00" duration-ms="16915" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search product, add to basket and validate"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["N11 Store and Product Automation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-07T23:22:16 GMT+03:00" name="tearDownClass" finished-at="2025-08-07T23:22:16 GMT+03:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@78e4deb0]" started-at="2025-08-08T12:16:34 GMT+03:00" name="tearDownClass" finished-at="2025-08-08T12:16:34 GMT+03:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

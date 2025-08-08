@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-N11_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-N11_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Go to random store and then validate&quot;, &quot;N11 Store and Product Automation&quot;)">runScenario("Go to random store and then validate", "N11 Store and Product Automation")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search product, add to basket and validate&quot;, &quot;N11 Store and Product Automation&quot;)">runScenario("Search product, add to basket and validate", "N11 Store and Product Automation")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-N11_Test_Suite -->
@@ -122,7 +122,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-N11_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search product, add to basket and validate&quot;, &quot;N11 Store and Product Automation&quot;)">runScenario("Search product, add to basket and validate", "N11 Store and Product Automation")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Go to random store and then validate&quot;, &quot;N11 Store and Product Automation&quot;)">runScenario("Go to random store and then validate", "N11 Store and Product Automation")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-N11_Test_Suite -->
@@ -145,14 +145,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Go to random store and then validate&quot;, &quot;N11 Store and Product Automation&quot;)">
-                  </a> <!-- runScenario("Go to random store and then validate", "N11 Store and Product Automation") -->
+                  <a name="runScenario(&quot;Search product, add to basket and validate&quot;, &quot;N11 Store and Product Automation&quot;)">
+                  </a> <!-- runScenario("Search product, add to basket and validate", "N11 Store and Product Automation") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Go to random store and then validate","N11 Store and Product Automation")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at stepDefinitions.N11Steps.verifyStorePageOpened(N11Steps.java:32)
-	at ✽.User verifies the store page opens correctly(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:9)
-... Removed 4 stack frames
+                  <span class="parameters">("Search product, add to basket and validate","N11 Store and Product Automation")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Lists differ at element [2]: 3740 != 2231 expected [3740] but found [2231]
+	at stepDefinitions.N11Steps.verifyFilterAndSortResult(N11Steps.java:86)
+	at ✽.User verifies the result is correct according to filter(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:24)
+... Removed 5 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -178,10 +178,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search product, add to basket and validate&quot;, &quot;N11 Store and Product Automation&quot;)">
-                  </a> <!-- runScenario("Search product, add to basket and validate", "N11 Store and Product Automation") -->
+                  <a name="runScenario(&quot;Go to random store and then validate&quot;, &quot;N11 Store and Product Automation&quot;)">
+                  </a> <!-- runScenario("Go to random store and then validate", "N11 Store and Product Automation") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search product, add to basket and validate","N11 Store and Product Automation")</span>
+                  <span class="parameters">("Go to random store and then validate","N11 Store and Product Automation")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -252,20 +252,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.TestRunner')
-data.setCell(0, 3, 18176);
+data.setCell(0, 3, 17798);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.TestRunner')
-data.setCell(1, 3, 16915);
+data.setCell(1, 3, 17336);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.TestRunner')
-data.setCell(2, 3, 16409);
+data.setCell(2, 3, 5685);
 window.suiteTableData['N11_Test_Suite']= { tableData: data, tableDiv: 'times-div-N11_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-N11_Test_Suite">
               </div> <!-- times-div-N11_Test_Suite -->
             </div> <!-- times-div -->
@@ -293,26 +293,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@51fc862e)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5dcd0cdf)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("Go to random store and then validate", "N11 Store and Product Automation")</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search product, add to basket and validate", "N11 Store and Product Automation")</span>
+                <span class="method-start">5748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Go to random store and then validate", "N11 Store and Product Automation")</span>
-                <span class="method-start">61 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">runScenario("Search product, add to basket and validate", "N11 Store and Product Automation")</span>
-                <span class="method-start">18239 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Search product, add to basket and validate", "N11 Store and Product Automation")</span>
-                <span class="method-start">34649 ms</span>
+                <span class="method-start">23547 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">51564 ms</span>
+                <span class="method-start">40886 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

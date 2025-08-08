@@ -1,13 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 51.79 s <<< FAILURE! -- in TestSuite
-runners.TestRunner.runScenario["Go to random store and then validate", "N11 Store and Product Automation"](1) -- Time elapsed: 18.18 s <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.13 s <<< FAILURE! -- in TestSuite
+runners.TestRunner.runScenario["Search product, add to basket and validate", "N11 Store and Product Automation"](3) -- Time elapsed: 17.34 s <<< FAILURE!
+java.lang.AssertionError: Lists differ at element [2]: 3740 != 2231 expected [3740] but found [2231]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at stepDefinitions.N11Steps.verifyStorePageOpened(N11Steps.java:32)
-	at ✽.User verifies the store page opens correctly(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:9)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1644)
+	at org.testng.Assert.assertEquals(Assert.java:1606)
+	at stepDefinitions.N11Steps.verifyFilterAndSortResult(N11Steps.java:86)
+	at ✽.User verifies the result is correct according to filter(file:///Users/savaskarakus/IdeaProjects/n11-web-automation/src/test/resources/features/n11.feature:24)
 

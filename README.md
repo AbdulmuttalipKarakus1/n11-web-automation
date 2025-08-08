@@ -11,7 +11,7 @@ This project automates a scenario on [n11.com](https://www.n11.com/magazalar) us
 
 ## Version Control 
 * [Github](https://github.com/AbdulmuttalipKarakus1/n11-web-automation) - The repo of project
-
+* [Git Tags](https://github.com/AbdulmuttalipKarakus1/n11-web-automation/tags) - Version of project
 
 ## Setup for mac
 
