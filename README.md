@@ -49,10 +49,10 @@ allure serve allure-results
 - Filter stores starting with "S"
 - Click a random store
 - Verify the store page
-
+---
 - Search "iPhone", add first and last product on first page
 - Verify products on the cart
-
+---
 - Search "telefon", 
 - Filter by second brand
 - Sort by "number of reviews"
